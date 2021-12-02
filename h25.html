@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors</title>
+    <style>
+        h1{
+            background-color: brown;
+            color: black;
+            text-align: center;
+            font-weight: bold;
+        }
+        /* if p is right inside div then > css will work */
+        div > p{
+            color: yellow;
+            background-color: green;
+            font-weight: bold;
+        }
+        /* when p is next sibling of div */
+        div + p{
+            color: white;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>More on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p>this is para inside li</p></li>
+                <li>not affected</li>
+            </ul>
+            <p>This is a para</p>
+        </div>
+        <p>This is another para</p>
+    </div>
+    <p>
+    this is outermost para
+    </p>
+</body>
+</html>

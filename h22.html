@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container {
+            height: 544px;
+            width: 100%;
+            border: 2px solid black;
+            display: flex;
+            /* will initalizeflex properties*/
+
+            /*flex properties for flex container*/
+            /*flex-direction: row;*/
+            /*By default flex direction is row
+            /* flex-direction: column; */
+            flex-direction: column-reverse; 
+
+            /*  flex-wrap: wrap; for responsive design*/
+
+            /*justify-content: center;will adjust content to centre
+            justify-content: space-between;
+            justify-content: space-evenly;*/
+
+            /*align-items: center;will vertically centre
+            align-items: stretch;*/
+        }
+
+        .item {
+            width: 150px;
+            height: 150px;
+            background-color: tomato;
+            border: 2px solid green;
+            margin: 10px;
+            padding: 3px;
+        }
+
+        #item1 {
+            /*flex properties for flex container*/
+            /*higher the order later will be shown*/
+            order: 2;
+            /* flex-grow: 3; will grow the most as per higher number*/
+        }
+
+        #item2 {
+            /*flex-shrink: 4; will shrink the most as per higher number*/
+            flex-basis: 300px;
+            /* when flex direction is set to row flex: basis will control width
+            /* when flex direction is set to column flex: basis will control height*/
+        }
+
+        #item3 {
+            /*flex: 2 2 230px; short hand as Grow-shrink-basis*/
+            align-self: flex-end;
+            align-self: flex-start;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is flexbox</h1>
+    <div class="container">
+        <div class="item" id="item1">First box</div>
+        <div class="item" id="item2">Second box</div>
+        <div class="item" id="item3">Third box</div>
+
+    </div>
+</body>
+</html>

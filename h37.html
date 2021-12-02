@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+</head>
+<style>
+    .container{
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas: 
+        'navbar navbar navbar navbar'
+        'section section section aside'
+        'footer footer footer footer';
+    }
+    .box{
+        background-color: yellow;
+        border: 3px solid black;
+        padding: 12px;
+    }
+    #navbar{
+        grid-area: navbar;
+    }
+    #section{
+        grid-area: section;
+    }
+    #aside{
+        grid-area: aside;
+    }
+    #footer{
+        grid-area: footer;
+    }
+</style>
+<body>
+    <div class="container">
+        <div id="navbar" class="box"> Home About Contact</div>
+        <div id="section" class="box">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum nihil vitae quam neque aliquam, veritatis sapiente placeat facere beatae atque impedit numquam dolores maiores iusto cupiditate ullam nesciunt nulla culpa tenetur voluptatibus odio accusantium! Voluptas eos perspiciatis earum molestias totam, dolorem doloremque impedit illo cum, nemo animi, aut vero? Debitis repudiandae nostrum nihil dolorem aperiam suscipit, cupiditate, dolorum quidem eveniet saepe deserunt excepturi adipisci labore nam et ad doloremque at quibusdam sed dolore iste distinctio vero? Cum illum asperiores est ducimus eius hic numquam debitis? Officiis asperiores repudiandae nisi ratione modi, nam voluptatem recusandae natus exercitationem soluta ducimus eius sit! ipsum dolor sit amet consectetur adipisicing elit. Consequuntur perferendis unde nostrum!</div>
+        <div id="aside" class="box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio accusamus ab sed. Consequuntur eveniet voluptatibus beatae, illo excepturi sunt ea, assumenda ducimus pariatur cupiditate atque hic animi nisi cumque magnam, iure impedit deserunt vero accusantium laborum temporibus libero quas officiis! Sunt ducimus error reprehenderit exercitationem, ullam facilis fugit quaerat voluptate, quis ipsum amet architecto corrupti possimus optio soluta quas expedita nihil nobis aut aliquid minima non dolorum animi. Accusantium itaque id dicta atque nostrum ex ducimus? Aut totam provident, ut laborum deleniti distinctio. Ullam obcaecati eligendi, odio accusantium dicta aspernatur perferendis veritatis molestiae minima maiores libero, eum suscipit corporis tempora, hic inventore ipsa assumenda sed laboriosam deleniti dolores! Non reprehenderit incidunt ipsum porro repudiandae velit recusandae suscipit quia accusamus ullam. Vitae alias neque ducimus. Saepe tempore atque sint corrupti ab nihil autem dicta fuga. Maxime corporis ducimus pariatur amet nemo. Dolores pariatur sapiente totam accusamus adipisci distinctio accusantium deserunt, repellat deleniti at nam assumenda inventore nobis doloremque dignissimos repudiandae error odio quasi numquam? Tempore aliquid aliquam omnis! Fugit, eos! Nesciunt ipsum odio corrupti ad quasi ratione repudiandae, sit, natus fugit nisi cum iusto officiis tempora quod sapiente consequatur modi reiciendis magnam quisquam. Aperiam ipsa ipsum repellendus! At ut, est quae perferendis accusantium voluptatem obcaecati quod rerum architecto nihil quas maxime placeat commodi odio sed unde sapiente suscipit omnis, quisquam eum recusandae necessitatibus quam excepturi. Neque fugit illo in atque necessitatibus? Ad perferendis dolorem odit temporibus debitis iste omnis distinctio? Quia, delectus adipisci, fugit autem eos vitae sed in ea deserunt tempore quasi! Nihil tempore temporibus qui eius id iure, maxime perferendis enim repudiandae sint amet facilis praesentium ipsam quas porro, beatae inventore delectus distinctio minus. Iste, atque quia. Aliquam non veniam quae quasi totam est quam magnam, nobis repellat repudiandae! Ratione ipsum atque ab sequi odio voluptatem consequatur nisi magni! ipsum dolor sit amet consectetur adipisicing elit. Dolore sequi non debitis qui dolores nulla laboriosam, officiis voluptatibus repudiandae blanditiis ipsum exercitationem commodi inventore.</div>
+        <footer id="footer" class="box">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa ea fuga porro?</footer>
+    </div>
+</body>
+</html>

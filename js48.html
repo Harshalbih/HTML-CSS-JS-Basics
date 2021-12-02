@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM manipulation</title>
+</head>
+<body>
+    <div id="main" class="container">
+        <ul id="nav">
+            <li>Home</li>
+            <li>About</li>
+            <li>services</li>
+            <li>more about </li>
+            <li>contact us</li>
+        </ul>
+    </div>
+    <div id="content"></div>
+    <div class="container">
+        another container
+    </div>
+
+    <script>
+        let main = document.getElementById('main');
+        console.log(main);
+
+        let nav = document.getElementById('nav');
+        console.log(nav);
+
+        let containers = document.getElementsByClassName('container')
+        console.log(containers);
+
+        // let selector = document.querySelector('.container');
+        // console.log('slector returns', selector);
+
+        let selector = document.querySelector('#nav>li');
+        console.log('slector returns', selector);
+        
+        document.getElementById('content').innerHTML = '<h3>this is an h3 heading</h3>'
+    </script>
+</body>
+</html>

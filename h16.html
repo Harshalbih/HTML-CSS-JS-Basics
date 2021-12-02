@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Ubuntu Mono', monospace;
+        }
+
+        .container {
+            width: 900px;
+            border: 3px solid blue;
+            margin: auto;
+            background-color: royalblue;
+        }
+
+        .item {
+            border: 3px solid grey;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background: rgb(248, 238, 238);
+        }
+
+        #fruits {
+            float: left;
+            width: 48%;
+        }
+
+        #computer {
+            float: right;
+            width: 48%;
+        }
+
+        #stationary {
+            clear: both;
+            width: 100%;
+        }
+
+        p,
+        h3,
+        h1 {
+            text-align: center;
+            margin: auto;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>welcome to my store</h1>
+        <div id="fruits" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. ipsum dolor sit
+                amet consectetur adipisicing elit. Nulla, sequi ipsa? Odit suscipit nisi labore dolores inventore omnis
+                eaque pariatur.Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div id="computer" class="item">
+            <h3>computer</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit. ipsum dolor sit. ipsum dolor sit, amet consectetur
+                adipisicing elit. Nisi temporibus aspernatur impedit fugit quis obcaecati suscipit doloribus. Quis,
+                omnis exercitationem. ipsum dolor sit amet.</p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>stationary</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, dicta corporis
+                veniam quam voluptatum reprehenderit voluptatibus odit unde at ullam quas facere eius sequi. ipsum dolor
+                sit amet.</p>
+        </div>
+    </div>
+</body>
+
+</html>

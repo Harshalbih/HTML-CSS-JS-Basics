@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction using alert, confirm, prompt</title>
+</head>
+
+<body>
+    <div class="contain">This is a page</div>
+
+    <script>
+        //Alert --- does not return anything
+        alert('This is a Alert');
+
+        //prompt
+        let name = prompt('what is ur name?,its me prompt', 'Guest');
+        console.log(name);
+
+        //confirm
+        let deletepost = confirm('Do u really want to delete this post?,im confirm')
+        // console.log(deletepost);
+        if (deletepost) {
+            console.log("Ur post has been deleted successfully");
+        }
+        else {
+            console.log("Ur post has not been deleted");
+        }
+
+        //Example
+        let age = prompt('Whats ur age?');
+        if(100>age>18){
+            //console.log('Welcome to club');
+            alert('Welcome to club');
+        }
+        else{
+            //console.log('sorry u r not allowed');
+            alert('sorry u r not allowed');
+        }
+    </script>
+
+</body>
+
+</html>
