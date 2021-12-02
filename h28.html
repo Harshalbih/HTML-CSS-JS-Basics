@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box nd text shadow</title>
+</head>
+<style>
+    .container{
+        display: flex;
+    }
+    .card{
+        padding: 23px 12px;
+        margin: 23px 12px;
+        background-color: rosybrown;
+        /* box-shadow: offset-x offset-y color; */
+        /* box-shadow: offset-x offset-y color; */
+        /* box-shadow: 10px 13px green; */
+        /* box-shadow: -10px -13px green; */
+
+        /* box-shadow: offset-x offset-y blur-radius; */
+         box-shadow: 7px 5px 10px green; 
+        /* box-shadow: -7px -5px -10px green; */
+
+        /* box-shadow: offset-x offset-y blur-radius spread-radius; */
+        /* box-shadow: -7px -5px 10px 34px rgba(71, 172, 172, 0.5); */
+
+        /* inner shadow */
+        /* box-shadow: inset 3px 5px 7px green; */
+    }
+    .card h2{
+        text-shadow: 2px 2px 2px white;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="card" id="car-1"><h2>Card1</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione suscipit, vitae blanditiis minus voluptatem vero magnam praesentium, sapiente incidunt aut voluptate? Reprehenderit, officia nesciunt!</p></div>
+        <div class="card" id="car-2"><h2>Card2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, amet rerum, quia saepe veritatis, repudiandae quis expedita minima rem at ipsa magnam itaque cum.</p></div>
+        <div class="card" id="car-3"><h2>Card3</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam beatae expedita explicabo dolor, exercitationem, nihil cupiditate culpa fugiat, quod doloribus accusamus asperiores alias vero.</p></div>
+    </div>
+</body>
+</html>

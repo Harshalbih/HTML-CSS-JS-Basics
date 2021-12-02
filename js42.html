@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS String functions</title>
+</head>
+
+<body>
+    <div class="container"></div>
+
+    <script>
+        var str = "This is a string";
+        console.log(str);
+        //first occuraance of a substring
+        var position = str.indexOf('is');
+        console.log(position)
+
+        //last occuraance of a substring
+        var position = str.lastIndexOf('is');
+        console.log(position)
+
+        //substring from a string
+        var subtr = str.substr(1, 6);
+        console.log(subtr)
+
+        //replacing string
+        var replaced = str.replace('string', 'Harsh');
+        console.log(str)
+        console.log(replaced)
+
+        //Uppercase
+        // console.log(str.toUpperCase());
+        // console.log(str.toLowerCase());
+
+        var newstring= str.concat(' New string');
+        console.log(newstring)
+
+        // var strWithWhitespaces = ('      this  conatin       whitespaces')
+        // console.log(strWithWhitespaces);
+        // console.log(strWithWhitespaces.trim);
+
+        // var char2 = str.charAt(2);
+        // console.log(char2);
+
+        console.log(str[1]);
+    </script>
+</body>
+
+</html>

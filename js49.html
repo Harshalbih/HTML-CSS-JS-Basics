@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js events</title>
+    <style>
+        #btn{
+            padding: 10px 14px;
+            border: 2px solid black;
+            background-color: red;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Browser events
+    click
+    contextMenu
+    mouseover/mouseout
+    mousedown/mouseup
+    mousemove
+
+    submit
+    focus
+
+    DOMContentLoaded -->
+
+<div class="container">
+    <h1>This is my heading</h1>
+    <p id="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, assumenda maxime? Recusandae illum sunt quasi non facere saepe autem similique quaerat ducimus debitis eos minus tempore eligendi blanditiis, delectus laborum aspernatur eaque voluptatem. Enim modi autem minus earum architecto laudantium fugiat, nemo culpa temporibus, quisquam quia. Deleniti consequatur quo dicta dolore neque ipsa fuga laborum minus hic distinctio? Facilis reprehenderit quia voluptatem, molestiae laudantium rerum dolorem exercitationem recusandae vel similique minus perferendis dolore perspiciatis rem velit delectus voluptatibus totam vitae modi fuga? Exercitationem animi amet officia laborum, perspiciatis molestiae suscipit placeat sequi quia repudiandae quo atque ad ratione deleniti doloremque totam impedit. Expedita temporibus incidunt vitae tempore dolor numquam corrupti, enim culpa iure corporis maxime praesentium optio quam nesciunt odit deserunt esse eum debitis at quod animi exercitationem. Odio voluptate voluptatibus quo necessitatibus? Consequatur harum aliquam molestiae perspiciatis blanditiis alias ipsam labore, assumenda libero quos non praesentium vel enim nihil nulla ducimus iure reiciendis quo saepe neque ut rerum! Mollitia iusto ut impedit, magni vero voluptates quibusdam soluta laborum maxime, repudiandae ad non enim nulla. Possimus sint iste harum, provident temporibus ab officia, et suscipit id debitis tenetur ratione dignissimos, dolorum repellat voluptatibus. Minima dignissimos repellendus architecto consequatur neque natus officia! Maxime quo rerum voluptate illum accusamus quis neque fugit in temporibus. Eos iusto illum obcaecati ullam, consectetur soluta excepturi autem aut placeat corrupti quia laudantium, maxime fugiat optio voluptas iste temporibus porro?</p>
+</div>
+<button id="btn" onclick="hide()">Show/hide</button>
+
+<script>
+    let para = document.getElementById('para');
+    para.addEventListener('mouseover', function run(){
+        console.log('on para');
+    });
+    para.addEventListener('mouseout', function run(){
+        console.log('out para');
+    });
+
+    function hide(){
+        // let btn = document.getElementById('btn');
+        // let para = document.getElementById('para');
+        if(para.style.display != 'none'){
+            para.style.display = 'none';
+        }
+        else{
+            para.style.display= "block";
+        }
+    }
+</script>
+</body>
+</html>
